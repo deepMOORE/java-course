@@ -16,4 +16,14 @@ public class FunRestController {
     public String sayHello() {
         return this.appName + this.appAuthor;
     }
+
+    @GetMapping("/workout")
+    public String getDailyWorkout() {
+        return "Run a workout!!";
+    }
+
+    @GetMapping("/fortune")
+    public String getDailyFortune() {
+        return "lucky!";
+    }
 }
